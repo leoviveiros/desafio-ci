@@ -1,8 +1,4 @@
 steps:
   - id: "rodando testes unitários"
     name: "golang"
-    args: ["go", "test"]
-
-  - id: "gerando build"
-    name: "golang"
-    args: ["go", "build"]
+    args: ["go", "test", "./src"]
