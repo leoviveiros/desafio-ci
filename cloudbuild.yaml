@@ -1,4 +1,4 @@
-- steps:
+steps:
   - id: "rodando testes unitários"
     name: "golang"
     args: ["go", "test"]
