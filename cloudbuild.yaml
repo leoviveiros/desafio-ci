@@ -2,3 +2,6 @@ steps:
   - id: "rodando testes unitários"
     name: "golang"
     args: ["go", "test", "./src/desafio-ci-golang", "-v"]
+
+images:
+  - 'gcr.io/$PROJECT_ID/desafio-ci-golang'
