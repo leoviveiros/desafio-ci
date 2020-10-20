@@ -3,7 +3,7 @@ steps:
     name: "golang"
     args: ["go", "test", "./src/desafio-ci-golang", "-v"]
 
-  - id: "gerando o build"
+  - id: "gerando o executavel"
     name: "golang"
     args: ["go", "build", "./src/desafio-ci-golang"]
 
