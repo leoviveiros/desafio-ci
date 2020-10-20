@@ -3,5 +3,13 @@ steps:
     name: "golang"
     args: ["go", "test", "./src/desafio-ci-golang", "-v"]
 
+  - id: "gerando o build"
+    name: "golang"
+    args: ["go", "build", "./src/desafio-ci-golang"]
+
+  - id: "build na imagem"
+    name: "docker"
+    args: ["build", "--tag=gcr.io/$PROJECT_ID/desafio-ci-golang", "."]
+
 images:
   - 'gcr.io/$PROJECT_ID/desafio-ci-golang'
