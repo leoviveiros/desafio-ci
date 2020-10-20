@@ -1,5 +1,5 @@
 FROM scratch
 
-COPY workspace/bin/desfio-ci-golang /desfio-ci-golang
+COPY workspace/desafio-ci-golang /desafio-ci-golang
 
-ENTRYPOINT ["/desfio-ci-golang"]
+ENTRYPOINT ["/desafio-ci-golang"]

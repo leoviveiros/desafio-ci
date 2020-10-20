@@ -2,16 +2,10 @@ steps:
   - id: "rodando testes unitários"
     name: "golang"
     args: ["go", "test", "./src/desafio-ci-golang", "-v"]
-    env: ['PROJECT_ROOT=desafio-ci-golang']
 
   - id: "gerando o executavel"
     name: "golang"
     args: ["go", "build", "./src/desafio-ci-golang"]
-    # env: ['PROJECT_ROOT=desafio-ci-golang']
-
-  - id: "workspace"
-    name: "golang"
-    args: ["ls", "/workspace"]
 
   - id: "build na imagem"
     name: "docker"
