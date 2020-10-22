@@ -7,6 +7,14 @@ steps:
     name: "golang"
     args: ["go", "build", "./src/desafio-ci-golang"]
 
+  - id: "ls workspace"
+    name: "golang"
+    args: ["ls"]
+
+  - id: "ls docker"
+    name: "docker"
+    args: ["ls"]
+
   - id: "build na imagem"
     name: "docker"
     args: ["build", "--tag=gcr.io/$PROJECT_ID/desafio-ci-golang", "."]
